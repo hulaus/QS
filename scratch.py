@@ -11,3 +11,8 @@ grocery_list = ["eggs", "milk", "cheese", "pasta"]
 #Mistake made... Make sure to put [] and not () for lists
 print("The first item on the list is " + grocery_list[0])
 print("The second item on the list is " + grocery_list[1])
+
+#Tuples Example and calling the fourth item in the tuple
+planets = ("Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune")
+
+print(planets[3])
