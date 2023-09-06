@@ -5,3 +5,9 @@ print("Hello, World\n\nHello World!")
 name = input("What is your name? " )
 
 greeting = print("Hello " + "" + name[:1])
+
+grocery_list = ["eggs", "milk", "cheese", "pasta"]
+
+#Mistake made... Make sure to put [] and not () for lists
+print("The first item on the list is " + grocery_list[0])
+print("The second item on the list is " + grocery_list[1])
