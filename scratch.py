@@ -54,3 +54,27 @@ customer2 = {
 }
 
 print(customer1["name"])
+
+#Multidimensional Lists
+#Daily High & Low temperature (in Fahrenheit)
+temps = [
+    [66, 34],
+    [57, 25],
+    [49, 45]
+]
+
+#Day 1 temps
+#Mistake... Make Sure to put brackets not parenthesis !
+print(temps[0])
+
+#Day 2 temps
+print(temps[1])
+
+#Day 3 temps
+print(temps[2])
+
+#Day 1 High
+print(temps[0][0])
+
+#Day 2 Low
+print(temps[0][1])
