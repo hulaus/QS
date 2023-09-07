@@ -33,3 +33,24 @@ customers = {"James Smith",
             "Walt Hawkins"}
 
 print(customers)
+
+#Example of a Dictionary
+#There are 2 Seprate dictionary variables: Four Values, each referenced by a key
+#The Keys in this example are name, age, phone, email
+#To acces one of these values by its key, we would use the name of the dictionary followed by the key name in brackets
+#KEYS ARE UNIQUE -- you cannot have more than one name, age, phone or email key in dictionary
+customer1 = {
+    "name": "James Smith",
+    "age": 24,
+    "phone": "555-555-1941",
+    "email": "james@xyzinternet.net"
+}
+
+customer2 = {
+    "name": "Andrea Richards",
+    "age": 33,
+    "phone": "555-555-4928",
+    "email": "andrea@coffeeloversunite.us"
+}
+
+print(customer1["name"])
