@@ -57,24 +57,49 @@ print(customer1["name"])
 
 #Multidimensional Lists
 #Daily High & Low temperature (in Fahrenheit)
+#09/07/2023 -- Added Two weeks of high and low data. 
+#MISTAKE -- Forgot to add an extra bracket to enclose the new data set. Make Sure to pay attention to small details such as brackets. 
 temps = [
-    [66, 34],
-    [57, 25],
-    [49, 45]
+    [
+        [66, 34],
+        [57, 25],
+        [49, 45],
+        [45, 19],
+        [33, 7],
+        [32, 14],
+        [49, 37],
+    ],
+    [
+        [52, 39],
+        [61, 51],
+        [64, 51],
+        [67, 51], 
+        [67, 57],
+        [69, 42],
+        [32, 14],
+        [49, 37],
+    ]
 ]
-
 #Day 1 temps
 #Mistake... Make Sure to put brackets not parenthesis !
-print(temps[0])
+#print(temps[0])
 
 #Day 2 temps
-print(temps[1])
+print(temps[0][1])
 
 #Day 3 temps
-print(temps[2])
+#print(temps[2])
 
 #Day 1 High
-print(temps[0][0])
+#print(temps[0][0])
 
 #Day 2 Low
-print(temps[0][1])
+#print(temps[0][1])
+
+#Day 3 Low
+#print(temps[2][1])
+
+#Third Day in the second Week's Low
+print(temps[1][2][1])
+
+#After adding the second set of values the original day temps examples do not work. The originaal day temps now have to be formatted like Day 2 Temps
