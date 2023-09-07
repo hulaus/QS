@@ -16,3 +16,20 @@ print("The second item on the list is " + grocery_list[1])
 planets = ("Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune")
 
 print(planets[3])
+
+#Example of Set... Will Return deduplicated and formatted it to read better
+customers = {"James Smith",
+            "Andrea Richards",
+            "Sam Sharp",
+            "Brenda Longmire",
+            "Veronica March",
+            "Sylvia Smith",
+            "James Smith",
+            "Vanessa Bush",
+            "Steve Hammersmith",
+            "Brenda Longmire",
+            "Sylvia Smith",
+            "Steve Hammersmith",
+            "Walt Hawkins"}
+
+print(customers)
