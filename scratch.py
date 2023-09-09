@@ -103,3 +103,10 @@ print(temps[0][1])
 print(temps[1][2][1])
 
 #After adding the second set of values the original day temps examples do not work. The originaal day temps now have to be formatted like Day 2 Temps
+
+#Basic if statement example
+a = "Yes"
+b = "Yes"
+
+if a == b:
+    print("a is equal to b")
