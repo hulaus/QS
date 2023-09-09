@@ -102,7 +102,7 @@ print(temps[0][1])
 #Third Day in the second Week's Low
 print(temps[1][2][1])
 
-#After adding the second set of values the original day temps examples do not work. The originaal day temps now have to be formatted like Day 2 Temps
+#After adding the second set of values the original day temps examples do not work. The original day temps now have to be formatted like Day 2 Temps
 
 #Basic if statement example
 a = "Yes"
@@ -110,3 +110,33 @@ b = "Yes"
 
 if a == b:
     print("a is equal to b")
+    print("Really, it is, I Promise !")
+else:
+    print("a is not equal to b")
+
+
+#If statement example with variables that do not have the same variable
+#if the if statement wasn't met and there is NO else condition the print function WILL NOT RUN
+c = "Yes"
+d = "No"
+
+if c == d:
+    print("c is equal to d")
+else:
+    print("dang dude... I guess it isn't")
+
+#Example of Greater than comparison 
+e = 1
+f = 2
+
+if a < b:
+    print("a is less than b")
+
+#else Example
+g = 1
+h = 2
+
+if g == h:
+    print("g is equal to h")
+else:
+    print("g is not equal to h")
