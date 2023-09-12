@@ -1,6 +1,8 @@
+# Example 1 -- 
 print("Hello, \nWorld")
 print("Hello, World\n\nHello World!")
 
+#Example 2 --
 #Mistake Number 1, make sure to include quotation marks in your parenthesis ! 
 name = input("What is your name? " )
 
@@ -12,11 +14,15 @@ grocery_list = ["eggs", "milk", "cheese", "pasta"]
 print("The first item on the list is " + grocery_list[0])
 print("The second item on the list is " + grocery_list[1])
 
+#Example 3 --
 #Tuples Example and calling the fourth item in the tuple
-planets = ("Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune")
+# planets = ("Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune")
+#print(planets[3])
+#Adding a new example of for loop to the current/previous tuple example
 
-print(planets[3])
 
+
+#Example 4 -- 
 #Example of Set... Will Return deduplicated and formatted it to read better
 customers = {"James Smith",
             "Andrea Richards",
@@ -34,6 +40,7 @@ customers = {"James Smith",
 
 print(customers)
 
+#Example 5 --
 #Example of a Dictionary
 #There are 2 Seprate dictionary variables: Four Values, each referenced by a key
 #The Keys in this example are name, age, phone, email
@@ -55,6 +62,7 @@ customer2 = {
 
 print(customer1["name"])
 
+#Example 6 -- 
 #Multidimensional Lists
 #Daily High & Low temperature (in Fahrenheit)
 #09/07/2023 -- Added Two weeks of high and low data. 
@@ -104,6 +112,7 @@ print(temps[1][2][1])
 
 #After adding the second set of values the original day temps examples do not work. The original day temps now have to be formatted like Day 2 Temps
 
+#Example 7 --
 #Basic if statement example
 a = "Yes"
 b = "Yes"
@@ -115,6 +124,7 @@ else:
     print("a is not equal to b")
 
 
+#Example 8 -- 
 #If statement example with variables that do not have the same variable
 #if the if statement wasn't met and there is NO else condition the print function WILL NOT RUN
 c = "Yes"
@@ -125,6 +135,7 @@ if c == d:
 else:
     print("dang dude... I guess it isn't")
 
+#Example 9 -- 
 #Example of Greater than comparison 
 e = 1
 f = 2
@@ -132,6 +143,7 @@ f = 2
 if a < b:
     print("a is less than b")
 
+#Example 10 -- 
 #else Example
 g = 1
 h = 2
@@ -140,3 +152,43 @@ if g == h:
     print("g is equal to h")
 else:
     print("g is not equal to h")
+
+#Example 11 -- 
+#Elif(else if) Example
+#A way to compare conditions in a chain, starting with a base assumption
+i = 1
+j = 2
+k = 3
+
+if i > j:
+    print("i is greater than j")
+#The first comparision was not successful so it will check the elif to see if that statement is true.
+elif j < k:
+    print("j is less than k")
+#Always put the Else after you're done putting all the elifs
+else: 
+    print("I don't know then")
+
+#Example 12 -- 
+#Nested Comparisions Example
+l = 2
+m = 2
+n = 2
+
+if l > m:
+    print("l is greater than m")
+    if m != n:
+        print("but m is not equal to n")
+    else:
+        print("m is equal to n")
+else:
+    print("l is less than m")
+
+
+#Example 13 -- For Loops
+#Display the planets
+
+planets = ["Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune"]
+
+for planet in planets:
+    print(planet)
