@@ -190,5 +190,19 @@ else:
 
 planets = ["Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune"]
 
-for planet in planets:
-    print(planet)
+#for planet in planets:
+print(planets)
+#^^ Different than just using print(planets). Using for statement, we are iterating over the planet and running the print statement on each entry.
+# WHEN NOT USING A FOR LOOP THE RESULT WILL LOOK LIKE THIS --> ['Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn', 'Uranus', 'Neptune']
+# WHEN USING FOR LOOP THE RESULT WILL LOOK LIKE THIS --> 
+        #Mercury
+        #Venus
+        #Earth
+        #Mars
+        #Jupiter
+        #Saturn
+        #Uranus
+        #Neptune
+
+#Explaination -- The planet list is defined with the list of currently names planets in our solar system. 
+#Then we use a for statement to say "For each planet in planets, run the following code." For each planet in the list Planets Run Print(Planets)
