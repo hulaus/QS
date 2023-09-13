@@ -190,8 +190,8 @@ else:
 
 planets = ["Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune"]
 
-#for planet in planets:
-print(planets)
+for planet in planets:
+    print(planet)
 #^^ Different than just using print(planets). Using for statement, we are iterating over the planet and running the print statement on each entry.
 # WHEN NOT USING A FOR LOOP THE RESULT WILL LOOK LIKE THIS --> ['Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn', 'Uranus', 'Neptune']
 # WHEN USING FOR LOOP THE RESULT WILL LOOK LIKE THIS --> 
@@ -204,5 +204,46 @@ print(planets)
         #Uranus
         #Neptune
 
-#Explaination -- The planet list is defined with the list of currently names planets in our solar system. 
+#Explaination -- The planet list is defined with the list of currently named planets in our solar system. 
 #Then we use a for statement to say "For each planet in planets, run the following code." For each planet in the list Planets Run Print(Planets)
+
+#For Loop Example 2
+#Iterate Through a string
+a = "Hello, World!"
+for c in a: 
+    print(c) #c stands for characacter
+
+#For loop Example 3
+#Created a list with three singular nouns, iterated over it with for statement
+singular_words = ["student", "teacher", "room"]
+for word in singular_words:
+    #Modified temporary variable by setting it equal to itself plus the letter "s" at the end
+    #word = word + "s"
+    #print(word)
+#SIMPLER WAY TO GET THE SAME RESULT AS THE CODE ABOVE
+    print(word + "s")
+#If we want to run code after for loop the else statement can be used
+else:
+    print("Done!")
+
+#Range Example -- Display the first ten numbers
+for i in range(10):
+    print(i)
+
+#For loop iterates over the result from the range fucntion supplied with the argument 10
+
+#Enumerate Example -- Display the planets and its number
+planets = ["Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune"]
+
+for index, value in enumerate(planets):
+    # Almost right but this starts at 0, Need to start at 1 --> print("Planet " + str(index) + ": " + value)
+    print("Planet " + str(index + 1) + ": " + value)
+    #The + 1 with the index adds 1 to the index so the index now starts at 1 and not 0
+
+#While loop Example -- While i is less than 10, display i
+
+i = 1 #First set variable i to 0 // Changed to one for new example.
+#Use while to execute TWO Commands as long as the comparison i <= 10 is true.
+while i <= 10: 
+    print(i)
+    i += 1
