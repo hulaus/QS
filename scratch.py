@@ -247,3 +247,18 @@ i = 1 #First set variable i to 0 // Changed to one for new example.
 while i <= 10: 
     print(i)
     i += 1
+
+#While loop example -- 99 Bottles of beer example
+bottles = 99 #First we set the bottles variable to 99
+while bottles > 0: #Start a while loop and say "run the following code while bottles is greather than zero".
+#Print First and second lines inserting bottles variable(integer) converting inline to string
+    print(str(bottles) + " Bottles of beer on the wall.") 
+    print(str(bottles) + " Bottles of beer.")
+    bottles -= 1 #Subtract by one from the bottles variable then run print again Twice using same variable to string conversion str()
+    #^^ This should subtract 1 from bottles variable. 
+    print("Take one down, pass it around,")
+    print(str(bottles) + " Bottles of beer on the wall")
+    
+#The Code will loop until the expresion bottles > 0 is no longer true (When bottles variable becomes 0)
+#Code Break Down ------------------------- ^^ 
+
