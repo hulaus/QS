@@ -4,14 +4,16 @@ from random import randint
 
 number = randint(10, 100)
 
-input("What number do you think it is?  ")
+guess = input("What number do you think it is?  ")
 
-if str(input) > str(number):
+if guess > str(number):
     print("Doh ! That's Too High !")
-else:
-    str(input) < str(number)
+    print(number)
+elif guess < str(number):
     print("Doooohhhh ! That number is too low !")
-print(number)
+    print(number)
+else: 
+    print(number)
 
 
 #Once running add more to the game !
