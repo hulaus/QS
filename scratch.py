@@ -269,3 +269,25 @@ for i in range(99)[::-1]:
     print("Take one down, pass it around,")
     print(str(i + 1) + " Bottles of beer on the wall")
 
+#Break Example -- 
+for i in range (10):
+    if i > 5: break #Stops at 6 because that number is greater than 5 and it needs to check the line before it is able to break.
+    print(i)
+#We loop through a range of 10 with i as our temporary variable. for each iteration we display the value, then on the next line we check to see if it's GREATER
+#than 5. If so, we break.
+# Originally the number would break at 6 but if we want to fix that move the print to after the if statement like shown above !
+#OR Change the > to >=
+
+#Continue Example --
+for i in range(10):
+    if i % 5: continue
+    print(i)
+# % is called a modulo (mod) and divied the variable by the number you provide. in this case 5 and ONLY RETURNS THE REMAINDER
+
+for i in range(10):
+    for j in range(10):
+        print(str(i) + str(j))
+
+#In the terminal you get 00 - 99 but it is not Counting all the way up to 99 ! It is interating through the first loop which first first number would be 0
+#Then Going into the nested loop iterating all the way to the number 10 then going back to the original for loop and incrementing by 1
+#so it is 1 - 1 , 1 - 2 , 1 - 3 , 1 - 4. Sort of like pairs. 
