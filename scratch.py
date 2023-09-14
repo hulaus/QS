@@ -284,6 +284,7 @@ for i in range(10):
     print(i)
 # % is called a modulo (mod) and divied the variable by the number you provide. in this case 5 and ONLY RETURNS THE REMAINDER
 
+#Nested Loops Example --
 for i in range(10):
     for j in range(10):
         print(str(i) + str(j))
