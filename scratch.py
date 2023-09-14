@@ -230,7 +230,7 @@ else:
 for i in range(10):
     print(i)
 
-#For loop iterates over the result from the range fucntion supplied with the argument 10
+#For loop iterates over the result from the range function supplied with the argument 10
 
 #Enumerate Example -- Display the planets and its number
 planets = ["Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune"]
@@ -261,4 +261,11 @@ while bottles > 0: #Start a while loop and say "run the following code while bot
     
 #The Code will loop until the expresion bottles > 0 is no longer true (When bottles variable becomes 0)
 #Code Break Down ------------------------- ^^ 
+
+for i in range(99)[::-1]:
+    print(str(i + 1) + " Bottles of beer on the wall")
+    print(str(i + 1) + " Bottles of beer.")
+    i -= 1
+    print("Take one down, pass it around,")
+    print(str(i + 1) + " Bottles of beer on the wall")
 
