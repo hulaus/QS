@@ -2,18 +2,25 @@
 from random import seed  
 from random import randint
 
-number = randint(10, 100)
+number = randint(1, 10)
 
-guess = input("What number do you think it is?  ")
+userguess = input("What number do you think it is?  ")
 
-if guess > str(number):
+
+if userguess > str(number):
     print("Doh ! That's Too High !")
-    print(number)
-elif guess < str(number):
+    input("Try Again! What is the number?  ")
+    while userguess > str(number):
+        print("Try again")
+        tryagain = input("Cmon.. You can do it ! What is your new guess?  ")
+        print(tryagain)
+elif userguess < str(number):
     print("Doooohhhh ! That number is too low !")
     print(number)
-else: 
+elif userguess == str(number):
+    print("Are you a mind reader?!")
     print(number)
+
 
 
 #Once running add more to the game !
